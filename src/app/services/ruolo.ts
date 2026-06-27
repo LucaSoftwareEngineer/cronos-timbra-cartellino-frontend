@@ -12,7 +12,7 @@ export class Ruolo {
   http = inject(HttpClient);
 
   list(): Observable<RuoloResponse[]> {
-    return this.http.get<RuoloResponse[]>(`${environment.apiUrl}/api/ingresso/ruolo/list`);
+    return this.http.get<RuoloResponse[]>(`${environment.apiUrl}/api/ruolo/list`);
   }
 
 }
