@@ -16,4 +16,8 @@ export class Dipendente {
     return this.http.post<DipendenteResponse>(`${environment.apiUrl}/api/dipendente/add`, request);
   }
 
+  list(): Observable<DipendenteResponse[]> {
+    return this.http.get<DipendenteResponse[]>(`${environment.apiUrl}/api/dipendente/list`);
+  }
+
 }
